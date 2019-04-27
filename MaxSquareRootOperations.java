@@ -27,6 +27,25 @@ class Solution {
             return count;
         } 
     }
+    
+    //Solution without recursion after some research
+    public int solution2(int A, int B) {
+		
+	int result = 0;
+		
+	while(B > A) {	
+	   A = (int) Math.sqrt(A);   
+	   B = (int) Math.sqrt(B);
+			
+	   if(B < 2)  break;
+	   
+	   result +=1;
+	}
+		
+	System.out.println("Result is: "+ result );
+		
+	return result;
+    }
 }
 
 
